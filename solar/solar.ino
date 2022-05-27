@@ -7,8 +7,6 @@ int LDR1 = A0; // Analog 0
 int LDR2 = A1;
 int LDR3 = A2;
 int LDR4 = A3;
-
-int tempt = A4;
   
 void setup()  
 {  
