@@ -1,4 +1,8 @@
+#include <dht.h>
 #include <Servo.h>
+#define dht_apin 12
+
+dht DHT;
 
 Servo servoUD; // Black Servo
 int servoUDpin = 8;
@@ -23,16 +27,21 @@ void setup()
     servoLR.attach(servoLRpin);
     servoUD.write(60);
     servoLR.write(60);
-
+    
     Serial.begin(9600);
     delay(500);
 }
 void loop()
 {
-
+    
     int valServoUD = servoUD.read();
     int valServoLR = servoLR.read();
-
+    Serial.print("Current UP DOWN = ");
+    Serial.print(valServoUD);
+    Serial.print("  ");
+    Serial.print("Current LEFT RIGHT = ");
+    Serial.println(+valServoLR);
+    
     int topR = analogRead(LdrTR);
     int topL = analogRead(LdrTL);
     int botR = analogRead(LdrBR);
@@ -92,4 +101,15 @@ void loop()
     }
 
     delay(10);
+
+}
+
+void readDht(){
+    DHT.read11(dht_apin);
+    Serial.print("Current humidity = ");
+    Serial.print(DHT.humidity);
+    Serial.print("%  ");
+    Serial.print("temperature = ");
+    Serial.print(DHT.temperature); 
+    Serial.println("C  ");
 }
