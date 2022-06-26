@@ -26,17 +26,17 @@ void loop() {
       //  Serial.println(myString);
       String t = getValue(myString, ',', 0);
       String h = getValue(myString, ',', 1);
-      String angServoUD = getValue(myString, ',', 2);
-      String angServoLR = getValue(myString, ',', 3);
-      String avgLdrUD = getValue(myString, ',', 4);
-      String avgLdrLR = getValue(myString, ',', 5);
+      String SUD = getValue(myString, ',', 2);
+      String SLR = getValue(myString, ',', 3);
+      String LUD = getValue(myString, ',', 4);
+      String LLR = getValue(myString, ',', 5);
 
       temperature = t.toInt();
       humid = h.toInt();
-      angServoUD = h.toInt();
-      angServoLR = h.toInt();
-      avgLdrUD = h.toInt();
-      avgLdrLR = h.toInt();
+      angServoUD = SUD.toInt();
+      angServoLR = SLR.toInt();
+      avgLdrUD = LUD.toInt();
+      avgLdrLR = LLR.toInt();
 
       Serial.print("Temperature : ");
       Serial.println(temperature);
