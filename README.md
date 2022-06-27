@@ -16,3 +16,12 @@ The solar tracker panel is a project in which a solar panel is moved automatical
 
 ## Circuit Diagram
 ![alt text](https://github.com/hkmiyj/Solar-Tracking-Panel/blob/master/Image/CircuitDiagram.png)
+
+## Video
+#Part 1
+https://user-images.githubusercontent.com/66932774/175999511-b79e8d5e-f2f2-4221-8275-9ebd98cb6055.MOV
+
+#Part 2
+https://user-images.githubusercontent.com/66932774/175999779-c11d9631-88a1-4cab-bc5c-9359d5e516c0.MOV
+
+
