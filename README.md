@@ -5,13 +5,14 @@ The solar tracker panel is a project in which a solar panel is moved automatical
 
 ## Component
 - Arduino Uno
-- NodeMCU/ESP-01 
+- NodeMCU
 - DHT11
 - Servo Motor x2
 - Breadboard
 - LDR x4
 - Mini Solar Panel
-- Resistor 220 Ohm
+- Resistor 220 Ohm x4
+- Resistor 10k Ohm
 
 ## Circuit Diagram
 ![alt text](https://github.com/hkmiyj/Solar-Tracking-Panel/blob/master/Image/CircuitDiagram.png)
